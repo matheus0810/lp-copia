@@ -1,0 +1,1252 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Pagtech - Sistema de Gestão de Cobranças Avulsas e Recorrentes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+<meta name="robots" content="index, follow">
+
+
+
+
+
+
+
+
+    
+    <link rel="shortcut icon" href="https://s3-sa-east-1.amazonaws.com/appsell-s3/media/logo/20a6a699-116d-49d5-9d87-26fafd715fe0.png" />
+    
+
+    <link rel="stylesheet" href="https://s3-sa-east-1.amazonaws.com/appsell-s3/static/theme1/assets/css/bootstrap.min.css">
+
+    <!-- Theme style -->
+    <link href="https://s3-sa-east-1.amazonaws.com/appsell-s3/static/theme1/assets/css/theme-style.css" rel="stylesheet">
+
+    <!-- Your custom override -->
+    <link href="https://s3-sa-east-1.amazonaws.com/appsell-s3/static/theme1/assets/css/pro-style.css?v=1.1" rel="stylesheet">
+    <link href="https://s3-sa-east-1.amazonaws.com/appsell-s3/static/theme1/assets/css/hotsite.css" rel="stylesheet">
+
+    <link href="https://s3-sa-east-1.amazonaws.com/appsell-s3/static/css/fontawesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,700' rel='stylesheet' type='text/css'>
+
+    
+
+    <style>
+.bg-blue-custom {
+    background-color: #59b200 !important;
+}
+
+body .header {
+    border-bottom-color: #59b200 !important;
+}
+
+.badge-primary, .bg-primary, .tag-primary {
+    background-color: #59b200 !important;
+}
+
+body #footer {
+    border-top: 2px solid #59b200;
+}
+
+.header-search {
+    background: #59b200;
+}
+
+#jPanelMenu-menu {
+    background-color: #59b200 !important;
+}
+
+.navbar .navbar-nav>.nav-item>.nav-link:hover,
+.navbar-light .navbar-nav>.nav-item>.nav-link:hover,
+.navbar .navbar-nav>.nav-item>.nav-link:focus,
+.navbar-light .navbar-nav>.nav-item>.nav-link:focus,
+.navbar .navbar-nav>.nav-link:hover,
+.navbar-light .navbar-nav>.nav-link:hover,
+.navbar .navbar-nav>.nav-link:focus,
+.navbar-light .navbar-nav>.nav-link:focus {
+  color: #59b200 !important;
+}
+
+.search-icon-open{
+    color: #59b200 !important;
+}
+
+hr.hr-primary {
+    border-top-color: #59b200 !important;
+}
+
+body #footer #toplink i, body a {
+    color: #59b200;
+}
+
+body a:hover{
+    text-decoration:underline;
+    color:#59b200;
+}
+
+.btn-primary {
+    border-color: #59b200;
+    background-color: #59b200;
+}
+
+.btn-primary-invert {
+    border-color: #59b200;
+    background-color: #59b200;
+    filter: brightness(130%);
+    color: #fff;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #59b200;
+  border-color: #59b200;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #59b200;
+  border-color: #59b200;
+  filter: brightness(130%);
+}
+
+.btn-outline-primary,
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+  color: #59b200;
+  border-color: #59b200;
+}
+
+.btn-outline-primary.active,
+.btn-outline-primary.active:focus,
+.btn-outline-primary.focus,
+.btn-outline-primary:active,
+.btn-outline-primary:active:focus,
+.btn-outline-primary:focus,
+.btn-outline-primary:hover,
+.open>.btn-outline-primary.dropdown-toggle,
+.show>.btn-outline-primary.dropdown-toggle {
+  background-color: #59b200;
+  border-color: #59b200;
+}
+
+.form-control:focus,
+.form-control:focus:hover {
+  border-color: #59b200;
+}
+
+.nav-tabs .active>.nav-link, .nav-tabs .active>.nav-link:focus, .nav-tabs .active>.nav-link:hover, .nav-tabs .nav-link.active, .nav-tabs .nav-link.active:focus, .nav-tabs .nav-link.active:hover {
+    color: #59b200;
+}
+
+.nav-tabs .active>.nav-link:before, .nav-tabs .nav-link.active:before {
+    background: #59b200;
+}
+
+.modal-progress, .overlay-hover-content.overlay-primary:after, .overlay.overlay-primary:after, .owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span, .owl-nav div:hover, .page-loader {
+    background: #59b200 !important;
+}
+
+.text-primary, a.text-primary:focus, a.text-primary:hover {
+    color: #59b200 !important;
+}
+
+#loader {
+    border-top: 16px solid #59b200 !important;
+}
+
+.page-link, .page-link:hover {
+    color: #59b200 !important;
+}
+
+.page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover {
+    background: #59b200 !important;
+    border-color: #59b200 !important;
+}
+
+.page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover {
+    color: #fff !important;
+}
+
+
+@media (max-width: 767px) {
+
+    .navbar-main .navbar-nav>.nav-item.active>.nav-link, .navbar-main .navbar-nav>.nav-item>.nav-link:hover {
+        color: #fff;
+        filter: brightness(130%);
+        background: #59b200 ;
+    }
+
+    .navbar-main .navbar-nav .open.active>.dropdown-toggle, .navbar-main .navbar-nav .open>.dropdown-toggle, .navbar-main .navbar-nav .show.active>.dropdown-toggle, .navbar-main .navbar-nav .show>.dropdown-toggle {
+        color: #fff;
+        filter: brightness(130%);
+        background: #59b200 ;
+    }
+
+}
+
+@media (min-width: 992px){
+    .navbar-expand-md .navbar-main .navbar-nav .open.active>.dropdown-toggle, .navbar-expand-md .navbar-main .navbar-nav .open>.dropdown-toggle, .navbar-expand-md .navbar-main .navbar-nav .show.active>.dropdown-toggle, .navbar-expand-md .navbar-main .navbar-nav .show>.dropdown-toggle, .navbar-expand-md.navbar-main .navbar-nav .open.active>.dropdown-toggle, .navbar-expand-md.navbar-main .navbar-nav .open>.dropdown-toggle, .navbar-expand-md.navbar-main .navbar-nav .show.active>.dropdown-toggle, .navbar-expand-md.navbar-main .navbar-nav .show>.dropdown-toggle {
+        border-top-color: #59b200 !important;
+    }
+
+    .navbar-expand-md .navbar-main.collapse .dropdown-menu, .navbar-expand-md.navbar-main.collapse .dropdown-menu {
+        border-bottom: 2px solid #59b200 !important;
+    }
+
+}
+
+</style>
+
+
+    
+<!-- HEAD Tags -->
+
+    
+
+    
+
+        
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-BS5GRLJ95E"></script>
+
+        
+
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            
+            gtag('config', 'G-BS5GRLJ95E');
+            
+
+            
+            gtag('config', 'AW-661983242', {'allow_enhanced_conversions':true});
+            
+
+            
+
+        </script>
+    
+
+
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '304673416922929');
+        fbq('track', 'PageView');
+
+        var fbPixelConfigured = true;
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=304673416922929&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+
+<!-- End HEAD Tags -->
+
+
+
+
+
+
+    
+
+    
+
+
+    
+
+
+
+
+
+
+
+</head>
+
+<!-- ======== @Region: body ======== -->
+
+<body class="header-ontop page-index-music navbar-layout-default">
+
+    
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+    
+
+    <!-- HEADER-->
+    
+<div id="header">
+    <div  data-toggle="sticky" >
+        <!--Header & Branding region-->
+        <div class="header">
+            <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.html) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .order-first or/and .order-last classes to make an element show first or last within .header-inner or .headr-block elements -->
+            <div class="header-inner container">
+                <!--branding/logo -->
+                <div class="header-brand">
+                    
+                    <div class="logo-box" style="height: 50px">
+                        <div class="logo-imgwrap">
+                            
+                            <a href="/">
+                                
+                                <img src="https://s3-sa-east-1.amazonaws.com/appsell-s3/media/logo/afca5391-680d-434a-a51f-a982406510c7.png" class="" style="max-height: 40px">
+                                
+                                
+                            </a>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- other header content -->
+                <div class="header-block order-12">
+                    <!-- mobile collapse menu button - data-toggle="collapse" = default BS menu - data-toggle="off-canvas" = Off-cavnas Menu - data-toggle="overlay" = Overlay Menu -->
+                    <a href="#top" class="btn btn-link btn-icon header-btn float-right d-lg-none" data-toggle="off-canvas" data-target=".navbar-main" data-settings='{"cloneTarget": true,"targetClassExtras": "navbar-offcanvas" }'>
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div class="navbar navbar-expand-md navbar-static-top">
+                    <!--everything within this div is collapsed on mobile-->
+                    <div class="navbar-main collapse" id="pageMenu">
+                        <!--main navigation-->
+                        <ul class="nav navbar-nav float-lg-right dropdown-effect-fade">
+                            
+
+
+
+
+
+
+<li class="nav-item">
+    <a href="#recursos" class="nav-link" target="_self" data-section="/#recursos" >
+        Recursos</a>
+</li>
+
+
+
+
+
+
+<li class="nav-item">
+    <a href="#precos" class="nav-link" target="_self" data-section="/#precos" >
+        Preços</a>
+</li>
+
+
+
+
+
+
+<li class="nav-item">
+    <a href="/white_label.html" class="nav-link" target="_blank" >
+        White Label</a>
+</li>
+
+
+
+
+
+
+<li class="nav-item">
+    <a href="https://web.pagtech.com.br/login/" class="btn btn-outline-primary btn-md btn-rounded ml-md-2 ml-sm-3" target="_blank" >
+        Área do Cliente</a>
+</li>
+
+
+
+
+
+
+<li class="nav-item">
+    <a href="#precos" class="btn btn-primary btn-md btn-rounded ml-md-2 ml-sm-3" target="_self" data-section="#precos" >
+        Quero ser Cliente</a>
+</li>
+
+
+
+
+
+
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div style="padding-top: 50px;"></div>
+
+
+    <!-- PAGE CONTENT -->
+    
+<div id="content">
+
+    <div class="container">
+
+        
+
+
+<div id="section-9325" class="page-section page-section-mb-8" >
+    
+    <div class="row">
+    <div class="col-md-6 flex-valign ">
+        <h2 class="text-left mb-3">A solução ideal para <span class="text-primary">cobrar e receber pagamentos</span></h2>
+        <p><font color="#424242">Sistema de <b>Gestão de Cobranças</b> Avulsas e Recorrentes.</font></p><p><font color="#424242"><b>Automatize</b> sua gestão de mensalidades, planos e assinaturas de forma <b>simples e fácil.</b></font></p>
+
+        
+<div class="row text-left">
+    <div class="col">
+        
+<button type="button" class="btn btn-xlg btn-success  btn-rounded mb-4 mb-lg-0" style="" data-toggle="modal"
+    data-target="#leadFormModal11">
+    
+    FALE CONOSCO VIA WHATSAPP
+</button>
+
+    </div>
+</div>
+
+    </div>
+    <div class="col-md-6">
+        <img src="https://s3-sa-east-1.amazonaws.com/appsell-s3/media/page/14/f79f4d02-979d-4b36-870e-f8636c569e34.jpg" class="img-fluid img-br-15">
+    </div>
+</div>
+
+    
+</div>
+
+<div id="section-9326" class="page-section page-section-mb-8" >
+    
+    
+
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="text-center mb-3">A melhor plataforma de <span class="text-primary">pagamentos recorrentes</span></h2>
+        <p style="text-align: center;"><b>Receba</b> de seus clientes através de <b>PIX, Boleto e Cartão de Crédito</b>.</p>
+    </div>
+    <div class="col-md-12 mt-3">
+        <div class="row text-center">
+            
+            <div class="col-lg-3 py-2">
+                <i class="fas fa-hand-holding-usd icon-5x text-primary" style="color: #28a745 !important"></i>
+                <h4 class="mt-3">Gestão de Clientes e Cobranças</h4>
+                
+            </div>
+            
+            <div class="col-lg-3 py-2">
+                <i class="fa-brands fa-pix icon-5x text-primary" style="color: #28a745 !important"></i>
+                <h4 class="mt-3">PIX Cobrança</h4>
+                
+            </div>
+            
+            <div class="col-lg-3 py-2">
+                <i class="fas fa-barcode icon-5x text-primary" style="color: #28a745 !important"></i>
+                <h4 class="mt-3">Emissão de Boleto Bancário</h4>
+                
+            </div>
+            
+            <div class="col-lg-3 py-2">
+                <i class="far fa-calendar-check icon-5x text-primary" style="color: #28a745 !important"></i>
+                <h4 class="mt-3">Gestão de Assinaturas Recorrentes</h4>
+                
+            </div>
+            
+            <div class="col-lg-3 py-2">
+                <i class="fa-solid fa-link icon-5x text-primary" style="color: #28a745 !important"></i>
+                <h4 class="mt-3">Link de Pagamento</h4>
+                
+            </div>
+            
+            <div class="col-lg-3 py-2">
+                <i class="fa-solid fa-map icon-5x text-primary" style="color: #28a745 !important"></i>
+                <h4 class="mt-3">Carnê de Boletos</h4>
+                
+            </div>
+            
+            <div class="col-lg-3 py-2">
+                <i class="fa-solid fa-money-check-dollar icon-5x text-primary" style="color: #28a745 !important"></i>
+                <h4 class="mt-3">Construtor de Páginas de Vendas</h4>
+                
+            </div>
+            
+            <div class="col-lg-3 py-2">
+                <i class="fa-solid fa-code icon-5x text-primary" style="color: #28a745 !important"></i>
+                <h4 class="mt-3">API para Devs</h4>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+    
+</div>
+
+<div id="recursos" class="page-section page-section-mb-8" >
+    
+    <div class="row">
+    <div class="col-md-6 flex-valign ">
+        <h2 class="text-left mb-3"><span class="text-primary">Reduza a inadimplência</span> e lucre mais</h2>
+        <p><i class="fas fa-check text-success"></i> Crie cobranças <b>com juros e prazos específicos</b> após vencimento</p>
+<p><i class="fas fa-check text-success"></i><b> Envie lembretes</b> de vencimento para seus clientes</p>
+<p><i class="fas fa-check text-success"></i><b> Pagamentos parcelados</b> em até 12 vezes no cartão de crédito</p>
+<p><i class="fas fa-check text-success"></i> Ou parcelados em até 24 vezes no <b>carnê e boleto bancário</b></p>
+
+        
+<div class="row text-left">
+    <div class="col">
+        
+<button type="button" class="btn btn-lg btn-outline-success  btn-rounded mb-4 mb-lg-0" style="" data-toggle="modal"
+    data-target="#leadFormModal11">
+    
+    <i class="fa-brands fa-whatsapp"></i>
+    
+    Fale com um especialista
+</button>
+
+    </div>
+</div>
+
+    </div>
+    <div class="col-md-6">
+        <img src="https://s3-sa-east-1.amazonaws.com/appsell-s3/media/page/14/358a1887-b3fb-4ade-865b-4af4eefd8158.jpg" class="img-fluid img-br-15">
+    </div>
+</div>
+
+    
+</div>
+
+<div id="section-9331" class="page-section page-section-mb-8" >
+    
+    <div class="row">
+    <div class="col-md-6 flex-valign order-md-2">
+        <h2 class="text-left mb-3"><span class="text-primary">Gestor de Assinaturas</span> Recorrentes</h2>
+        <p><b>Automatize&nbsp;</b><b style="font-size: 1rem;">suas cobranças mensais!</b></p>
+<p><i class="fas fa-check text-success"></i> <b>Configure uma única vez</b> a mensalidade do seu cliente, detalhando o método de cobrança e a data de vencimento.</p>
+<p><i class="fas fa-check text-success"></i> Cadastre o seu cliente, os dados da cobrança e receba com praticidade e segurança por <b>Pix, Cartão de crédito e Boleto bancário</b>.</p>
+
+        
+<div class="row text-left">
+    <div class="col">
+        
+<button type="button" class="btn btn-lg btn-outline-success  btn-rounded mb-4 mb-lg-0" style="" data-toggle="modal"
+    data-target="#leadFormModal11">
+    
+    <i class="fa-brands fa-whatsapp"></i>
+    
+    Fale com um especialista
+</button>
+
+    </div>
+</div>
+
+    </div>
+    <div class="col-md-6">
+        <img src="https://s3-sa-east-1.amazonaws.com/appsell-s3/media/page/14/1aa19ead-f11f-4b6e-9fe2-cbb1b3325be6.jpg" class="img-fluid img-br-15">
+    </div>
+</div>
+
+    
+</div>
+
+<div id="section-9330" class="page-section page-section-mb-8" >
+    
+    <div class="row">
+    <div class="col-md-6 flex-valign ">
+        <h2 class="text-left mb-3"><span class="text-primary">PIX</span> Cobrança</h2>
+        <p><b>Receba de seus clientes</b> através do PIX Cobrança com <b>recebimento instantâneo</b>.</p>
+<p><i class="fas fa-check text-success"></i> Defina <b>multas, juros</b> e a <b>data de vencimento</b> do PIX</p>
+<p><i class="fas fa-check text-success"></i> Você pode receber de seus clientes mesmo no <b>fim de semana</b></p>
+<p><i class="fas fa-check text-success"></i> Seu dinheiro é recebido em <b>poucos segundos</b></p>
+<p><i class="fas fa-check text-success"></i> Fácil de pagar, basta ler o <b>QR Code</b></p>
+
+        
+<div class="row text-left">
+    <div class="col">
+        
+<button type="button" class="btn btn-lg btn-outline-success  btn-rounded mb-4 mb-lg-0" style="" data-toggle="modal"
+    data-target="#leadFormModal11">
+    
+    <i class="fa-brands fa-whatsapp"></i>
+    
+    Fale com um especialista
+</button>
+
+    </div>
+</div>
+
+    </div>
+    <div class="col-md-6">
+        <img src="https://s3-sa-east-1.amazonaws.com/appsell-s3/media/page/14/69926185-7b57-4e4c-b866-c5ad55afb20a.jpg" class="img-fluid img-br-15">
+    </div>
+</div>
+
+    
+</div>
+
+<div id="section-9332" class="page-section page-section-mb-8" >
+    
+    <div class="row">
+    <div class="col-md-6 flex-valign order-md-2">
+        <h2 class="text-left mb-3">Emissão de <span class="text-primary">Boletos e Carnês</span></h2>
+        <p><b>Receba de seus clientes</b> através de <b>boleto registrado</b>&nbsp;com configuração de juros, multa e desconto.&nbsp;</p>
+
+<p>O <b>carnê</b> é ideal para vendas parceladas. <b>Gerencie e edite</b> as informações do carnê de maneira fácil, podendo <b>acompanhar em tempo real as parcelas recebidas</b> e previstas no mês e por cliente.</p><p>Cada carnê pode conter até 24 parcelas e os boletos são entregues de uma vez.</p>
+
+        
+<div class="row text-left">
+    <div class="col">
+        
+<button type="button" class="btn btn-lg btn-outline-success  btn-rounded mb-4 mb-lg-0" style="" data-toggle="modal"
+    data-target="#leadFormModal11">
+    
+    <i class="fa-brands fa-whatsapp"></i>
+    
+    Fale com um especialista
+</button>
+
+    </div>
+</div>
+
+    </div>
+    <div class="col-md-6">
+        <img src="https://s3-sa-east-1.amazonaws.com/appsell-s3/media/page/14/c64d2ddf-411a-4e8a-969a-dbd792e294e3.png" class="img-fluid img-br-15">
+    </div>
+</div>
+
+    
+</div>
+
+<div id="section-9333" class="page-section page-section-mb-8" >
+    
+    <div class="row">
+    <div class="col-md-6 flex-valign ">
+        <h2 class="text-left mb-3"><span class="text-primary">Link de Pagamento</span> e Página de Checkout</h2>
+        <p><b>Ferramenta completa</b> para criação de link de pagamento e&nbsp;<b>páginas de vendas de alta conversão</b>.</p><p><i class="fas fa-check text-success"></i> Ideal para venda de <b>planos recorrentes</b>, softwares, assinaturas, info-produtos, doações, entre outros</p><p><i class="fas fa-check text-success"></i> <b>Crie ofertas alternativas</b>, atribuindo diferentes preços a um mesmo produto</p><p><i class="fas fa-check text-success"></i> Crie <b>parcelamentos customizáveis</b></p>
+<p><i class="fas fa-check text-success"></i> <b>Personalização da página</b> com banner, cor de fundo e vantagens do produto/serviço</p>
+
+        
+<div class="row text-left">
+    <div class="col">
+        
+<button type="button" class="btn btn-lg btn-outline-success  btn-rounded mb-4 mb-lg-0" style="" data-toggle="modal"
+    data-target="#leadFormModal11">
+    
+    <i class="fa-brands fa-whatsapp"></i>
+    
+    Fale com um especialista
+</button>
+
+    </div>
+</div>
+
+    </div>
+    <div class="col-md-6">
+        <img src="https://s3-sa-east-1.amazonaws.com/appsell-s3/media/page/14/ba040588-7562-47c9-8e58-9dd49d0c237d.jpg" class="img-fluid img-br-15">
+    </div>
+</div>
+
+    
+</div>
+
+<div id="section-9334" class="page-section page-section-mb-8" >
+    
+    <div class="row">
+    <div class="col-md-6 flex-valign order-md-2">
+        <h2 class="text-left mb-3"><span class="text-primary">API</span> para Desenvolvedores</h2>
+        <p><b>Conheça a melhor API</b> <span style="font-size: 1rem;">para gerenciar e receber pagamentos.</span></p><p><i class="fas fa-check text-success"></i> API amigável e de <b>fácil integração</b></p>
+<p><i class="fas fa-check text-success"></i> Integre nossa API para <b>assinaturas, faturas avulsas ou carnês</b></p><p><i class="fas fa-check text-success"></i><b> Webhook</b>&nbsp;simples e de fácil configuração</p>
+<p><i class="fas fa-check text-success"></i><b> Ambiente Sandbox</b> para testes</p>
+
+        
+<div class="row text-left">
+    <div class="col">
+        
+<button type="button" class="btn btn-lg btn-outline-success  btn-rounded mb-4 mb-lg-0" style="" data-toggle="modal"
+    data-target="#leadFormModal11">
+    
+    <i class="fa-brands fa-whatsapp"></i>
+    
+    Fale com um especialista
+</button>
+
+    </div>
+</div>
+
+    </div>
+    <div class="col-md-6">
+        <img src="https://s3-sa-east-1.amazonaws.com/appsell-s3/media/page/14/4944df31-0641-497d-84dd-5cd0ea486ec3.png" class="img-fluid img-br-15">
+    </div>
+</div>
+
+    
+</div>
+
+<div id="section-9335" class="page-section page-section-mb-8" >
+    
+    <div class="row">
+    <div class="col-md-12">
+        <h2 class="text-center mb-3">A solução completa para você <span class="text-primary">emitir cobranças e receber pagamentos</span>, fácil e sem burocracia.</h2>
+        
+    </div>
+    
+    <div class="col-md-12">
+        
+<div class="row text-center">
+    <div class="col">
+        
+<button type="button" class="btn btn-xlg btn-success  btn-rounded mb-4 mb-lg-0" style="" data-toggle="modal"
+    data-target="#leadFormModal11">
+    
+    FALE CONOSCO VIA WHATSAPP
+</button>
+
+    </div>
+</div>
+
+    </div>
+    
+</div>
+
+    
+</div>
+
+<div id="precos" class="page-section page-section-mb-8" >
+    
+    <div class="row">
+    <div class="col-md-12">
+        <h2 class="text-center mb-3"><span class="text-primary">Conheça nossos Planos</span></h2>
+        
+    </div>
+    <div class="col-md-12 mt-3">
+        <div class="row pricing-stack">
+            
+            <div class="col-md-4">
+                <div class="card bg-shadow text-center border-0">
+                    
+                    <h4 class="plan-card-title py-3 my-0 text-shadow op-8">
+                        Grátis
+                    </h4>
+                    <p class="price-banner bg-light shadow-sm card-body-overlap">
+
+                        
+                        <span class="price-currency">R$</span>
+                        <span class="price-digits text-success" style="">0,00</span>
+                        <span class="price-extra">/<strong>mês</strong></span>
+                        
+
+                    </p>
+                    <div class="card-body">
+                        <ul class="list-unstyled text-left text-sm plan-items-list">
+                            
+                            <li><i class="fas fa-check text-success mr-2" style=""></i> <b>R$ 1,99</b> PIX Cobrança recebido</li>
+                            
+                            <li><i class="fas fa-check text-success mr-2" style=""></i> <b>R$ 2,39</b> Boleto pago</li>
+                            
+                            <li><i class="fas fa-check text-success mr-2" style=""></i> <b>3,59%</b> no cartão de crédito</li>
+                            
+                        </ul>
+                        
+                        
+<button type="button" class="btn btn-lg btn-warning  btn-rounded btn-block mb-2" style="" data-toggle="modal"
+    data-target="#leadFormModal11">
+    
+    CONTRATAR AGORA
+</button>
+
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card bg-shadow text-center border-0">
+                    
+                    <h4 class="plan-card-title py-3 my-0 text-shadow op-8">
+                        Plano White Label
+                    </h4>
+                    <p class="price-banner bg-light shadow-sm card-body-overlap">
+
+                        
+                        <span class="text-success" style="font-size:20px">R$ <strong>(consulte)</strong></span>
+
+                        
+
+                    </p>
+                    <div class="card-body">
+                        <ul class="list-unstyled text-left text-sm plan-items-list">
+                            
+                            <li><i class="fas fa-check text-success mr-2" style=""></i> <b>Criação de Contas Digitais</b></li>
+                            
+                            <li><i class="fas fa-check text-success mr-2" style=""></i> <b>Domínio Próprio</b></li>
+                            
+                            <li><i class="fas fa-check text-success mr-2" style=""></i> <b>Markup nas taxas</b></li>
+                            
+                            <li><i class="fas fa-check text-success mr-2" style=""></i> <b>100% White Label</b></li>
+                            
+                        </ul>
+                        
+                        
+<button type="button" class="btn btn-lg btn-warning  btn-rounded btn-block mb-2" style="" data-toggle="modal"
+    data-target="#leadFormModal11">
+    
+    CONTRATAR AGORA
+</button>
+
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+    
+</div>
+
+<div id="section-9337" class="page-section page-section-mb-8" >
+    
+    
+
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="text-center mb-3">Saiba mais sobre o <span class="text-primary">Plano White Label</span></h2>
+        
+    </div>
+    <div class="col-md-12 mt-3">
+        <div class="row">
+            
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-2 mb-3 text-center">
+                        <i class="fas fa-wallet fa-fw icon-3x text-primary" style="color: #28a745 !important"></i>
+                    </div>
+                    <div class="col-md-10 text-smc-center">
+                        <h4 class="mt-0">Criação de Contas Digitais</h4>
+                        
+                        <p>Tenha a conta da sua empresa e o cadastro ilimitado de sub-contas sob sua gestão.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-2 mb-3 text-center">
+                        <i class="fas fa-percentage fa-fw icon-3x text-primary" style="color: #28a745 !important"></i>
+                    </div>
+                    <div class="col-md-10 text-smc-center">
+                        <h4 class="mt-0">Ganhe Dinheiro em cada Transação</h4>
+                        
+                        <p>Defina seu Markup nas taxas de Crédito, PIX e Boleto.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-2 mb-3 text-center">
+                        <i class="fas fa-exchange-alt fa-fw icon-3x text-primary" style="color: #28a745 !important"></i>
+                    </div>
+                    <div class="col-md-10 text-smc-center">
+                        <h4 class="mt-0">Transferências P2P (interna entre contas)</h4>
+                        
+                        <p>Realize transferências para qualquer sub-conta cadastrada dentro da plataforma sem custos.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-2 mb-3 text-center">
+                        <i class="fas fa-chart-line fa-fw icon-3x text-primary" style="color: #28a745 !important"></i>
+                    </div>
+                    <div class="col-md-10 text-smc-center">
+                        <h4 class="mt-0">Relatórios Completos</h4>
+                        
+                        <p>Realize análises, acesse relatórios, acompanhe as transações em tempo real, controle as cobranças, inadimplência e notificações.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="col-md-12 mt-3">
+        
+<div class="row text-center">
+    <div class="col">
+        
+<button type="button" class="btn btn-xlg btn-success  btn-rounded mb-4 mb-lg-0" style="" data-toggle="modal"
+    data-target="#leadFormModal11">
+    
+    FALE CONOSCO VIA WHATSAPP
+</button>
+
+    </div>
+</div>
+
+    </div>
+    
+</div>
+
+
+
+
+    
+</div>
+
+
+        
+
+<div class="modal fade" tabindex="-1" id="leadFormModal11" aria-labelledby="leadFormModalLabel11" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="leadFormModalLabel11">
+                    
+                    <span class="modal-whats-icon"><i class="fab fa-whatsapp"></i></span>
+                    
+                    
+                    Fale Conosco
+                </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                
+                <div id="leadFormDiv11" data-fb-event-name="Contact" data-gtag-label="AW-661983242/kAjPCNvZoYsYEIqg1LsC">
+                    <form id="leadForm11" class="lead-form" onsubmit="return leadFormSubmit(event, 11, 'whatsapp_chat')">
+                        <input type="hidden" name="lead_form_id" value="11">
+                        <input type="hidden" name="tag_manager_id" value="8">
+                        
+                        <input type="hidden" name="whatsapp_url" id="whatsapp_url11" value="https://api.whatsapp.com/send?phone=5531971785209&amp;text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20plataforma%20de%20cobran%C3%A7as.">
+                        
+                        
+
+                        <p>
+    <label for="id_f_36">E-mail:</label>
+    <input type="email" name="f_36" class="form-control vTextField" placeholder="Digite o seu e-mail" required autocomplete="email" id="id_f_36">
+    
+    
+  </p>
+
+  
+  <p>
+    <label for="id_f_46">Telefone:</label>
+    <input type="text" name="f_46" class="form-control phone" placeholder="xx-xxxxx-xxxx" required autocomplete="tel-national" id="id_f_46">
+    
+    
+  </p>
+
+  
+  <p>
+    <label for="id_f_37">Quantas cobranças realiza por mês?</label>
+    <select name="f_37" class="form-control vTextField" required id="id_f_37">
+  <option value="" selected>Selecione</option>
+
+  <option value="Até 20">Até 20</option>
+
+  <option value="Entre 21 e 80">Entre 21 e 80</option>
+
+  <option value="Entre 81 e 150">Entre 81 e 150</option>
+
+  <option value="Entre 151 e 300">Entre 151 e 300</option>
+
+  <option value="Entre 301 e 500">Entre 301 e 500</option>
+
+  <option value="Entre 501 e 1000">Entre 501 e 1000</option>
+
+  <option value="Acima de 1000">Acima de 1000</option>
+
+</select>
+    
+    
+  </p>
+
+  
+  <p>
+    <label for="id_f_38">Segmento:</label>
+    <select name="f_38" class="form-control vTextField" required id="id_f_38">
+  <option value="" selected>Selecione</option>
+
+  <option value="Academias">Academias</option>
+
+  <option value="Administradora de Condomínios">Administradora de Condomínios</option>
+
+  <option value="Advogados">Advogados</option>
+
+  <option value="Agência de Publicidade">Agência de Publicidade</option>
+
+  <option value="Associações">Associações</option>
+
+  <option value="Clínicas no Geral">Clínicas no Geral</option>
+
+  <option value="Clubes de Assinaturas">Clubes de Assinaturas</option>
+
+  <option value="Cursos e Escolas">Cursos e Escolas</option>
+
+  <option value="Escritório de Contabilidade">Escritório de Contabilidade</option>
+
+  <option value="Estacionamentos">Estacionamentos</option>
+
+  <option value="Funerária">Funerária</option>
+
+  <option value="Imobiliárias">Imobiliárias</option>
+
+  <option value="Outros">Outros</option>
+
+  <option value="Proteção Veicular">Proteção Veicular</option>
+
+  <option value="Provedor de Internet">Provedor de Internet</option>
+
+  <option value="Seguros">Seguros</option>
+
+  <option value="Serviços Jurídicos">Serviços Jurídicos</option>
+
+  <option value="Softwares">Softwares</option>
+
+</select>
+    
+    
+      
+    
+  </p>
+
+                        <div class="form-group">
+                            <button type="submit" id="leadFormBtnSubmit11" class="btn btn-success btn-xlg btn-block btn-rounded mt-4">
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display: none;"></span>
+                                
+                                Conversar no WhatsApp
+                            </button>
+                        </div>
+
+                        <div id="leadFormError11" class="alert alert-danger" role="alert" style="display: none;">
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" tabindex="-1" id="messageAlertModal" aria-labelledby="titleAlertModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="titleAlertModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="messageAlertTextModal">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="clearfix"></div>
+    </div>
+
+</div>
+
+    <!-- END PAGE CONTENT -->
+
+    <!-- FOOTER-->
+    
+<footer id="footer" class="footer-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+
+                    
+                        
+                        
+                        <img src="https://s3-sa-east-1.amazonaws.com/appsell-s3/media/logo/949013a0-a239-436f-b63e-f0d2e99a3ff0.png" style="max-height:40px">
+                        
+                        
+
+                        
+
+                    <ul class="list-inline footer-links mt-3">
+
+                        
+                        
+                        <li class="list-inline-item">
+                            <a href="/#recursos" target="_self" data-section="/#recursos" >
+                                Recursos
+                            </a> | 
+                        </li>
+                        
+                        
+                        
+                        <li class="list-inline-item">
+                            <a href="/#precos" target="_self" data-section="/#precos" >
+                                Preços
+                            </a> | 
+                        </li>
+                        
+                        
+                        
+                        <li class="list-inline-item">
+                            <a href="/lp-criar-fintech-white-label/" target="_blank" >
+                                White Label
+                            </a> | 
+                        </li>
+                        
+                        
+                        
+                        <li class="list-inline-item">
+                            <a href="https://web.pagtech.com.br/login/" target="_blank" >
+                                Área do Cliente
+                            </a> | 
+                        </li>
+                        
+                        
+                        
+                        <li class="list-inline-item">
+                            <a href="#precos" target="_self" data-section="#precos" >
+                                Quero ser Cliente
+                            </a>
+                        </li>
+                        
+                        
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+        <hr class="my-2">
+
+        <div class="subfooter text-sm text-center">
+            
+            <p>Pagtech Tecnologia da Informação LTDA<br>
+CNPJ: 33.609.276/0001-20 - Belo Horizonte/MG
+<hr class="my-2">
+<a href="https://web.pagtech.com.br/termos-de-uso/" class="text-muted" target="_blank">Termos de uso</a> - <a href="https://web.pagtech.com.br/politica-de-privacidade/" class="text-muted"  target="_blank">Política de privacidade</a> - <a href="/compliance-politicas-e-manuais/" target="_blank" class="text-muted">Compliance e Políticas</a></p>
+            
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+
+    <!--Hidden elements - excluded from jPanel Menu on mobile-->
+    <div class="hidden-elements js-off-canvas-exclude"></div>
+
+
+    <!--jQuery 3.3.1 via CDN -->
+    <script src="https://s3-sa-east-1.amazonaws.com/appsell-s3/static/theme1/assets/js/jquery-3.3.1.min.js"></script>
+    <!-- Popper 1.16.0 via CDN, needed for Bootstrap Tooltips & Popovers -->
+    <script src="https://s3-sa-east-1.amazonaws.com/appsell-s3/static/theme1/assets/js/popper-1.16.0.min.js"></script>
+
+    <!-- Bootstrap v4.5.0 JS via CDN -->
+    <script src="https://s3-sa-east-1.amazonaws.com/appsell-s3/static/theme1/assets/js/bootstrap.min.js"></script>
+
+    <script src="https://s3-sa-east-1.amazonaws.com/appsell-s3/static/js/mask/jquery.mask.min.js"></script>
+    <script src="https://s3-sa-east-1.amazonaws.com/appsell-s3/static/theme1/assets/js/pro-custom-script.js"></script>
+    <script src="https://s3-sa-east-1.amazonaws.com/appsell-s3/static/theme1/assets/js/script.min.js"></script>
+    <script src="https://s3-sa-east-1.amazonaws.com/appsell-s3/static/theme1/assets/js/lead-form.js?v14"></script>
+    <script src="https://s3-sa-east-1.amazonaws.com/appsell-s3/static/theme1/assets/js/cta-util.js"></script>
+    <script src="https://s3-sa-east-1.amazonaws.com/appsell-s3/static/js/js.cookie.js"></script>
+
+    <script type="text/javascript">
+        $.extend(true, Config, { PLUGINS_LOCALPATH: 'https://s3-sa-east-1.amazonaws.com/appsell-s3/static/theme1/assets/plugins/' });
+
+        var csrftoken = Cookies.get('csrftoken');        
+    </script>
+
+    
+
+<script src="https://s3-sa-east-1.amazonaws.com/appsell-s3/static/js/lgpd_cookie.js"></script>
+<script>
+    cookiesAlert({
+        message:'Usamos cookies para garantir que você obtenha a melhor experiência no nosso site.',
+        linkText:'',
+        linkUrl:'',
+        dismissButton:'Entendi',
+        buttonClass:'btn-primary',
+        backgroundColor:'rgba(15,14,21,.9)',
+        textColor:'#FFFFFF',
+        position:'bottom-left',
+    });
+</script> 
+
+
+     
+
+</body>
+
+</html>
